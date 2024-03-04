@@ -59,7 +59,7 @@
     - **Expected Response**: RoboReception  thanks the user, wishes them a great day, and ends the conversation.
 
 
-####Booking a consult appointment as a new patient, with the user provided time unavailable but other slots available on same date
+#### Booking a consult appointment as a new patient, with the user provided time unavailable but other slots available on same date
 
 #### Test Steps:
 
@@ -318,7 +318,7 @@
     - **Expected Response**: The chatbot should thank the user and end the conversation with a goodbye message.
 
 
-####Booking a cleaning appointment as a new patient, with the user seeking the earliest available slot and accepting other available slots 
+#### Booking a cleaning appointment as a new patient, with the user seeking the earliest available slot and accepting other available slots 
 
 #### Test Steps:
 
