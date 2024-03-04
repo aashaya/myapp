@@ -1,4 +1,6 @@
-#### Booking an emergency appointment as a new patient, with the user provided date and time slot available.
+#### ALL
+
+#### Booking  an emergency appointment as a new patient, with the user provided date and time slot available.
 
 #### Test Steps:
 
@@ -59,7 +61,7 @@
     - **Expected Response**: RoboReception  thanks the user, wishes them a great day, and ends the conversation.
 
 
-#### Booking a consult appointment as a new patient, with the user provided time unavailable but other slots available on same date
+#### Booking  a consult appointment as a new patient, with the user provided time unavailable but other slots available on same date
 
 #### Test Steps:
 
@@ -278,7 +280,7 @@
    - **Expected Response**: The chatbot should acknowledge the user as a new patient and request their phone number, including the area code.
 
 3. **Provide Phone Number**
-   - **Action**: Enter "4782274290."
+   - **Action**: Enter "###-###-####."
    - **Expected Response**: The chatbot should repeat the phone number back to confirm its accuracy.
 
 4. **Confirm Phone Number**
@@ -318,7 +320,7 @@
     - **Expected Response**: The chatbot should thank the user and end the conversation with a goodbye message.
 
 
-#### Booking a cleaning appointment as a new patient, with the user seeking the earliest available slot and accepting other available slots 
+#### Booking  a cleaning appointment as a new patient, with the user seeking the earliest available slot and accepting other available slots 
 
 #### Test Steps:
 
@@ -331,7 +333,7 @@
    - **Expected Response**: The chatbot should acknowledge the user as a new patient and request their phone number, including the area code.
 
 3. **Provide Phone Number**
-   - **Action**: Enter "4782274290."
+   - **Action**: Enter "###-###-####."
    - **Expected Response**: The chatbot should repeat the phone number back to confirm its accuracy.
 
 4. **Confirm Phone Number**
@@ -377,4 +379,86 @@
 14. **Conclude Interaction**
     - **Action**: Say "no" when asked if there's anything else the assistant can help with.
     - **Expected Response**: The chatbot should thank the user and end the conversation with a goodbye message.
+
+
+#### Test Case: Checking an Appointment
+
+##### Test Steps:
+
+1. **Greeting and Initial Request**
+   - **Action**: User initiates the conversation with a request to "check appointment."
+   - **Expected Response**: The chatbot offers assistance to check the date and time of the user's next appointment and indicates it needs to collect more information.
+
+2. **Provide Phone Number**
+   - **Action**: Enter "###-###-####" when asked for the phone number.
+   - **Expected Response**: The chatbot repeats the phone number back to confirm its accuracy.
+
+3. **Confirm Phone Number**
+   - **Action**: Confirm the accuracy of the phone number with "yes."
+   - **Expected Response**: The chatbot thanks the user and proceeds to ask for the patient's first name.
+
+4. **Provide Patient's First Name**
+   - **Action**: Respond with "John."
+   - **Expected Response**: The chatbot thanks the user and asks for the patient's last name.
+
+5. **Provide Patient's Last Name**
+   - **Action**: Reply with "Cena."
+   - **Expected Response**: The chatbot requests the patient's date of birth.
+
+6. **Provide Date of Birth**
+   - **Action**: Enter "Oct 10 1947."
+   - **Expected Response**: The chatbot thanks the user and confirms the date of birth provided.
+
+7. **Confirm Date of Birth**
+   - **Action**: Confirm the date of birth with "yes."
+   - **Expected Response**: The chatbot acknowledges and locates the user's record, then informs the user of their scheduled appointment.
+
+8. **Appointment Information Provided**
+   - **Action**: Await the appointment details from the chatbot.
+   - **Expected Response**: The chatbot confirms that the user has one scheduled appointment on 2024-03-18 at 10:00 AM.
+
+9. **Conclude Interaction**
+    - **Action**: Respond with "no" when asked if there's anything else the chatbot can assist with.
+    - **Expected Response**: The chatbot thanks the user and ends the conversation.
+
+
+#### Test Case: Canceling an Appointment
+
+##### Test Steps:
+
+1. **Greeting and Initial Request**
+   - **Action**: User initiates the conversation with a request to "cancel appointment."
+   - **Expected Response**: The chatbot offers to help cancel an appointment and indicates it needs to collect more information.
+
+2. **Provide Phone Number**
+   - **Action**: Enter “###-###-####" when asked for the phone number.
+   - **Expected Response**: The chatbot thanks the user and repeats the phone number back to confirm its accuracy.
+
+3. **Confirm Phone Number**
+   - **Action**: Confirm the accuracy of the phone number with "yes."
+   - **Expected Response**: The chatbot thanks the user and proceeds to ask for the patient's first name.
+
+4. **Provide Patient's First Name**
+   - **Action**: Respond with "John."
+   - **Expected Response**: The chatbot thanks the user and asks for the patient's last name.
+
+5. **Provide Patient's Last Name**
+   - **Action**: Reply with "Cena."
+   - **Expected Response**: The chatbot requests the patient's date of birth.
+
+6. **Provide Date of Birth**
+   - **Action**: Enter "Oct 2 1947."
+   - **Expected Response**: The chatbot thanks the user and confirms the date of birth provided.
+
+7. **Confirm Date of Birth**
+   - **Action**: Confirm the date of birth with "yes."
+   - **Expected Response**: The chatbot acknowledges, locates the user's appointment record, and confirms the appointment details.
+
+8. **Confirm Cancellation**
+   - **Action**: Agree to cancel the appointment by responding with "yes."
+   - **Expected Response**: The chatbot confirms that the user's appointment has been cancelled.
+
+9. **Conclude Interaction**
+    - **Action**: Respond with "no" when asked if there's anything else the chatbot can assist with.
+    - **Expected Response**: The chatbot thanks the user, wishes them a great day, and ends the conversation.
 
