@@ -1,4 +1,4 @@
-####Booking an emergency appointment as a new patient, with the user provided date and time slot available.
+#### Booking an emergency appointment as a new patient, with the user provided date and time slot available.
 
 #### Test Steps:
 
