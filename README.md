@@ -11,7 +11,7 @@
    - **Expected Response**: RoboReception  thanks the user and proceeds to collect necessary information for booking.
 
 3. **Provide Phone Number**
-   - **Action**: Enter "4782274290" when asked for the phone number.
+   - **Action**: Enter "###-###-####" when asked for the phone number.
    - **Expected Response**: RoboReception  repeats the phone number back to confirm its accuracy.
 
 4. **Confirm Phone Number**
@@ -72,7 +72,7 @@
    - **Expected Response**: RoboReception should acknowledge the user as a new patient and request their phone number, including the area code.
 
 3. **Provide Phone Number**
-   - **Action**: Enter "4782274290."
+   - **Action**: Enter "###-###-####."
    - **Expected Response**: RoboReception should repeat the phone number back to confirm its accuracy.
 
 4. **Confirm Phone Number**
