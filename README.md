@@ -123,7 +123,7 @@
     - **Action**: Indicate that no further assistance is needed.
     - **Expected Response**: RoboReceptionshould thank the user for their inquiry and say goodbye.
 
-#### Appointment Date/Time Not Available. Look for Next Availalbe Appointment.
+#### Appointment Date/Time Not Available. Look for Next Availalbe Appointment and book first slot available
 
 #### Test Steps:
 
@@ -193,4 +193,72 @@
 
 17. **Conclude Interaction**
     - **Action**: Say "no" when asked if there's anything else the assistant can help with.
-    - **Expected Response**: "Thank you for calling True Dental Care. Have a great day! Good Bye!"
+    - **Expected Response**: "Thank you for calling True Dental Care. Have a great day! Good Bye!”
+
+#### Appointment Date/Time Not Available. Look for Next Availalbe Appointment and book other slot available
+
+#### Test Steps:
+
+1. **Greeting and Initial Request**
+   - **Action**: Send the message "book appointment."
+   - **Expected Response**: The chatbot should offer assistance in scheduling an appointment and inquire whether the user is a new or returning patient.
+
+2. **Identify as New Patient**
+   - **Action**: Respond with "new."
+   - **Expected Response**: The chatbot should acknowledge the user as a new patient and request their phone number, including the area code.
+
+3. **Provide Phone Number**
+   - **Action**: Enter “###-###-####"
+   - **Expected Response**: The chatbot should repeat the phone number back to confirm its accuracy.
+
+4. **Confirm Phone Number**
+   - **Action**: Confirm with "yes."
+   - **Expected Response**: The chatbot should thank the user and proceed to ask for the patient's first name.
+
+5. **Provide First Name**
+   - **Action**: Say "John."
+   - **Expected Response**: The chatbot should request the patient's last name.
+
+6. **Provide Last Name**
+   - **Action**: Reply with "Cena."
+   - **Expected Response**: The chatbot should ask for the patient's date of birth.
+
+7. **Provide Date of Birth**
+   - **Action**: Enter "oct 10 1947."
+   - **Expected Response**: The chatbot should confirm the date of birth by repeating it back.
+
+8. **Confirm Date of Birth**
+   - **Action**: Respond with "yes."
+   - **Expected Response**: The chatbot should indicate that it is registering the user in the system.
+
+9. **Specify Appointment Type**
+   - **Action**: Request an "emergency" appointment.
+   - **Expected Response**: The chatbot should confirm the appointment type as Emergency.
+
+10. **Specify Appointment Date**
+    - **Action**: Indicate "March 18."
+    - **Expected Response**: The chatbot should confirm the chosen date.
+
+11. **Specify Appointment Time**
+    - **Action**: Suggest "7 am."
+    - **Expected Response**: The chatbot should ask for confirmation of the proposed time.
+
+12. **Respond to First Time Slot Offer**
+    - **Action**: Respond with "no" to the 08:30 AM slot.
+    - **Expected Response**: The chatbot should offer the next available slot at 09:00 AM.
+
+13. **Respond to Second Time Slot Offer**
+    - **Action**: Respond with "no" to the 09:00 AM slot.
+    - **Expected Response**: The chatbot should offer the next available slot at 09:30 AM.
+
+14. **Respond to Third Time Slot Offer**
+    - **Action**: Respond with "no" to the 09:30 AM slot.
+    - **Expected Response**: The chatbot should offer the next available slot at 10:00 AM.
+
+15. **Accept Final Time Slot Offer**
+    - **Action**: Respond with "yes" to the 10:00 AM slot.
+    - **Expected Response**: The chatbot should confirm the booking of the appointment.
+
+16. **Conclude Interaction**
+    - **Action**: Say "no" when asked if there's anything else the assistant can help with.
+    - **Expected Response**: The chatbot should thank the user and end the conversation with a goodbye message.
