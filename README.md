@@ -1,4 +1,4 @@
-#### Initial Robo Reception Call by calling  561-559-6410
+#### Begin Robo Reception Call by calling  561-559-6410
 
 #### Booking  an emergency appointment as a new patient, with the user provided date and time slot available.
 
