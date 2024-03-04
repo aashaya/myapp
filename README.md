@@ -1,4 +1,4 @@
-#### ALL
+#### Initial Robo Reception Call by calling  561-559-6410
 
 #### Booking  an emergency appointment as a new patient, with the user provided date and time slot available.
 
@@ -138,7 +138,7 @@
    - **Expected Response**: "Thank you! Please say your phone number starting with the area code?"
 
 3. **Provide Phone Number**
-   - **Action**: Say "Phone Number" (assuming the actual action is to provide a specific phone number like "561-559-6410").
+   - **Action**: Say "Phone Number".
    - **Expected Response**: "I wrote down {Phone Number} is this correct?"
 
 4. **Confirm Phone Number**
